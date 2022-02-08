@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <h1>IMAGE GALLERY</h1>
+<div class="container">
+
+  <div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide"><img src="Images/apple.jpg" /></div>
+    <div class="swiper-slide"><img src="Images/bulb.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/forest.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/river.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/tower.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/tree.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/firewater.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/hills.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/laptop.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/keypad.jpg"/></div>
+    <div class="swiper-slide"><img src="Images/website.jpg" /></div>
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    const swiper = new Swiper('.swiper', {
+autoplay:{
+  delay:5000,
+  disableOnInteraction:false,
+},
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+  </script>
+  </body>
+</html>
